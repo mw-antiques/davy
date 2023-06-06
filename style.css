@@ -7,6 +7,7 @@ header {
 	color: #7a1212;
     border-radius: 30px;
 }
+
 .confetti-container {
     position: fixed;
     top: 0;
@@ -37,7 +38,6 @@ header {
     }
   }
   
-
 nav ul {
 	list-style: none;
 	display: flex;
@@ -83,7 +83,6 @@ nav a {
     background-color: #f1f1f1;
   }
   
-
 main {
 	display: flex;
 	align-items: center;
@@ -186,7 +185,6 @@ footer a {
     }
   }
   
-
 /*@media screen and (max-width: 768px) {
 	header {
 		flex-direction: column;

@@ -1,1 +1,4 @@
-
+/*This used to be an empty js file upto now.
+This file never gets called anywhere thus is not functional to this project
+The owner should decide whether it is to be removed or it has futur purpose.
+*/
