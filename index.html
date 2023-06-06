@@ -4,8 +4,8 @@
 	<title>Thunder's </title>
 	<link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/jpg" href="mine.jpg"/>
-
 </head>
+
 <body>
 	<header>
         <h1>Whoami</h1>
@@ -21,7 +21,6 @@
 
 	<main>
         <div class="matrix-container"></div>
-
 		<h1 class="animated-words">thunder@Thunder</h1>
 		<img src="mine.jpg" alt="Hacker Image" class="hacker-img-left">
 	</main>
@@ -33,32 +32,31 @@
 
 	<script>
         function createMatrix() {
-  const characters = "thunder@Thunderthunder@thunderthunder@thunderthunder@thunderthunder@thunder";
-  const matrix = document.createElement("div");
-  matrix.classList.add("matrix-character");
-  matrix.textContent = characters[Math.floor(Math.random() * characters.length)];
-  matrix.style.left = Math.random() * 100 + "%";
-  matrix.style.animationDelay = Math.random() * 2 + "s";
-  document.querySelector(".matrix-container").appendChild(matrix);
-  setTimeout(() => {
-    matrix.remove();
-  }, 2000);
-}
-//string of flowing events after every 50ms
-setInterval(createMatrix, 10);
+  		const characters = "thunder@Thunderthunder@thunderthunder@thunderthunder@thunderthunder@thunder";
+  		const matrix = document.createElement("div");
+  		matrix.classList.add("matrix-character");
+  		matrix.textContent = characters[Math.floor(Math.random() * characters.length)];
+  		matrix.style.left = Math.random() * 100 + "%";
+  		matrix.style.animationDelay = Math.random() * 2 + "s";
+  		document.querySelector(".matrix-container").appendChild(matrix);
+  		setTimeout(() => {
+    	matrix.remove();
+  		}, 2000);
+		}
 
-//effect to appear and disappear
-document.querySelector(".matrix-container").animate([
-  { bottom: '-100vh' },
-  { bottom: '0' },
-  { bottom: '-100vh' }
-], {
-  duration: 10000,
-  easing: 'linear'
-});
+		//string of flowing events after every 50ms
+		setInterval(createMatrix, 10);
 
-        
+		//effect to appear and disappear
+		document.querySelector(".matrix-container").animate([
+  		{ bottom: '-100vh' },
+  		{ bottom: '0' },
+  		{ bottom: '-100vh' }
+		], {
+  		duration: 10000,
+  		easing: 'linear'
+		});
+	</script>
 
-    </script>
 </body>
 </html>
