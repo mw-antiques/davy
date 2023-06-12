@@ -1,62 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Thunder's </title>
-	<link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="image/jpg" href="mine.jpg"/>
+  <meta charset="UTF-8">
+  <title>davy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: 'Arial Black', sans-serif;
+      font-size: 2rem;
+      text-align: center;
+    }
+    
+    .social-icons-container {
+      margin-top: auto;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .social-icons {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .social-icons a {
+      margin: 0 0.5rem;
+      transition: transform 0.3s;
+    }
+    
+    .social-icons a:hover {
+      transform: scale(1.2);
+    }
+    
+    .social-icons i {
+      font-size: 2rem;
+    }
+    
+    h1 {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+    
+    @media (max-width: 768px) {
+      body {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
 </head>
-
 <body>
-	<header>
-        <h1>Whoami</h1>
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="/thunder/About/About.html">About</a></li>
-				<li><a href="#">Policy</a></li>
-			</ul>
-		</nav>
-		<img src="iconista.jpg" alt="Davy" class="hacker-img">
-	</header>
-
-	<main>
-        <div class="matrix-container"></div>
-		<h1 class="animated-words">thunder@Thunder</h1>
-		<img src="mine.jpg" alt="Hacker Image" class="hacker-img-left">
-	</main>
-
-	<footer>
-		<p>&copy; Thunder@Thunder</p>
-		<p>Ping me: <a href="mailto:sudothunder@gmail.com">sudothunder@gmail.com</a></p>
-	</footer>
-
-	<script>
-        function createMatrix() {
-  		const characters = "thunder@Thunderthunder@thunderthunder@thunderthunder@thunderthunder@thunder";
-  		const matrix = document.createElement("div");
-  		matrix.classList.add("matrix-character");
-  		matrix.textContent = characters[Math.floor(Math.random() * characters.length)];
-  		matrix.style.left = Math.random() * 100 + "%";
-  		matrix.style.animationDelay = Math.random() * 2 + "s";
-  		document.querySelector(".matrix-container").appendChild(matrix);
-  		setTimeout(() => {
-    	matrix.remove();
-  		}, 2000);
-		}
-
-		//string of flowing events after every 50ms
-		setInterval(createMatrix, 10);
-
-		//effect to appear and disappear
-		document.querySelector(".matrix-container").animate([
-  		{ bottom: '-100vh' },
-  		{ bottom: '0' },
-  		{ bottom: '-100vh' }
-		], {
-  		duration: 10000,
-  		easing: 'linear'
-		});
-	</script>
-
+  <h1>Hi, &#x1F609 am David!</h1>
+  <div class="social-icons-container">
+    <div class="social-icons">
+      <a href="https://github.com/Ndegwadavid" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/david-njoroge-7a6a55226/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://wa.me/+254797342380" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/thund.e.r/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 </body>
 </html>
